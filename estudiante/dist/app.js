@@ -4,12 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-const routes_1 = __importDefault(require("./routes"));
-const app = (0, express_1.default)();
-exports.default = app;
+const appConst = (0, express_1.default)();
+exports.default = appConst;
 //properties
-app.set("port", 4444);
+appConst.set("port", 4444);
 //middelware
-app.use(express_1.default.json());
-//routes
-app.use("/api", routes_1.default);
+appConst.use(express_1.default.json());

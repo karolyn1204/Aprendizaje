@@ -1,14 +1,14 @@
 import express, { Application } from "express";
 import router from "./routes";
-const app : Application = express();
+const appConst : Application = express();
 
-export default app;
+export default appConst;
 
 //properties
-app.set("port",4444);
+appConst.set("port",4444);
 
 //middelware
-app.use(express.json());
+appConst.use(express.json());
 
 //routes
-app.use("/api",router);
+appConst.use("/api",router);
