@@ -1,0 +1,14 @@
+# IDEs and Editors
+.idea/
+
+# NPM dependencies
+node_modules/
+
+# Generated files
+coverage/
+.serverless/
+.nyc_output/
+/src/**/*.js
+/src/**/*.js.map
+.npmrc
+package-lock.json
